@@ -1,0 +1,7 @@
+Nome: Nome Pessoa Jurídica
+Razão Social: Razão Social Pj LTDA
+Endereço: Rua de Piatã, 123
+Instituição: SENAI Informática
+Rendimento: R$ 10000,10
+CNPJ: 11.222.333/0001-44
+CNPJ válido: True
