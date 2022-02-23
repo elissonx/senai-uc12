@@ -1,0 +1,7 @@
+Nome: Elisson Andrade
+Data de Nascimento: 02/01/1989
+CPF: 111.222.333-44
+Endereço: Rua de Piatã, 123
+Escola: SENAI Informática
+Rendimento: R$ 1000,10
+Maior de idade: True
