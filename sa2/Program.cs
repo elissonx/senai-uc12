@@ -1,32 +1,30 @@
 
 using System;
 using CADASTRO_PESSOA_FS1.Classes;
-using System.IO; //necessária para o StreamWrite utilizado na criação dos arquivos .txt
+using System.IO;
 using System.Threading;
 
 Console.WriteLine(@$"
-============================================================
-|           Bem vindo ao Sistema de Cadastro de            |
-|               Pesssoas Físicas e Jurídicas               |
-============================================================
+************************************************************
+*           Bem vindo ao Sistema de Cadastro de            *
+*               Pesssoas Físicas e Jurídicas               *
+************************************************************
 ");
 
-BarraAçao("Carregando ", 1500); //código definido após o final do "do-while" no static
+BarraAçao("Carregando ", 1500);
 
-string opcao; //precisa ser definida anteriormente para ser usada na estrut de repetição do while
+string opcao; 
 
 do
 {
     Console.Clear();
-
     Console.WriteLine(@$"
-============================================================
+************************************************************
 |               Escolha uma das opções abaixo:             |
 |                 1 - Pessoa Física                        |
 |                 2 - Pessoa Jurídica                      |
-|                                                          |
 |                 0 - Sair                                 |
-============================================================
+************************************************************
 ");
 
     opcao = Console.ReadLine();
@@ -63,16 +61,16 @@ do
             Maior de idade: {metodoPf.ValidarDataNascimento(novaPf.dataNascimento)}
             ");
 
-            Console.WriteLine($"'Enter' para continuar...");
+            Console.WriteLine($"Pressione 'Enter' para continuar...");
             Console.ReadLine();
 
             break;
 
         case "2":
 
-            PessoaJuridica metodoPj = new PessoaJuridica(); //objeto para método
+            PessoaJuridica metodoPj = new PessoaJuridica(); 
 
-            PessoaJuridica novaPj = new PessoaJuridica(); //objeto separado para criar dados da pessoa juridica
+            PessoaJuridica novaPj = new PessoaJuridica();
             Endereco novoEndPj = new Endereco();
 
             novaPj.nome = "Nome Pessoa Jurídica";
@@ -108,7 +106,7 @@ do
             Console.Clear();
             Console.WriteLine($"    Obrigado por utilizar nosso Sistema!\n");
 
-            BarraAçao("         Finalizando ", 500);
+            BarraAçao("         Concluindo ", 500);
 
             break;
 
@@ -123,9 +121,9 @@ do
 
 } while (opcao != "0");
 
-static void BarraAçao(string texto, int tempo) //criando uma função static para definir configurações da barra de carregamento
+static void BarraAçao(string texto, int tempo)
 {
-            // Console.BackgroundColor = ConsoleColor.Black;
+
             Console.ForegroundColor = ConsoleColor.Yellow;
 
             Console.Write($"{texto}");
