@@ -1,5 +1,3 @@
-# senai-uc12
-
 # Projeto Cadastro
 Repositório criado para a UC12 do curso FS-SENAI juntamente com o projeto de cadastro
 
